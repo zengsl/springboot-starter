@@ -1,0 +1,9 @@
+/*这里可以设置扩展信息*/
+ext {
+    version = [
+            "springBootVersion": "2.7.18"
+    ]
+    dependencies = []
+}
+
+

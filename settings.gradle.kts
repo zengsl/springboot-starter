@@ -35,7 +35,15 @@ dependencyResolutionManagement {
             library("mapStruct", "org.mapstruct","mapstruct").versionRef("mapStructVersion")
             library("mapStructProcessor", "org.mapstruct","mapstruct-processor").versionRef("mapStructVersion")
             //library("thymeleafExtraJavaTime", "org.thymeleaf.extras","thymeleaf-extras-java8time").versionRef("thymeleafExtraVersion")
-
+            library("commons-lang3", "org.apache.commons:commons-lang3:3.13.0")
+            library("commons-math3", "org.apache.commons:commons-math3:3.6.1")
+            library("jackson-core", "com.fasterxml.jackson.core:jackson-core:2.15.3")
+            library("jackson-databind", "com.fasterxml.jackson.core:jackson-databind:2.15.3")
+            library("jackson-modules-java8", "com.fasterxml.jackson.module:jackson-modules-java8:2.15.3")
+            library("jackson-module-parameter", "com.fasterxml.jackson.module:jackson-module-parameter-names:2.15.3")
+            library("jackson-datatype-jsr310", "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.15.3")
+            library("jackson-datatype-jdk8", "com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.15.3")
+            library("jsoup", "org.jsoup:jsoup:1.16.1")
         }
     }
 }

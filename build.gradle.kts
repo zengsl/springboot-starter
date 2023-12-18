@@ -9,6 +9,7 @@ buildscript {
 }
 
 plugins {
+    idea
     java
     id("org.springframework.boot") version "2.7.18"
 }
@@ -16,6 +17,13 @@ plugins {
 java {
     sourceCompatibility = JavaVersion.VERSION_11
     targetCompatibility = JavaVersion.VERSION_11
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
+
+tasks.compileJava {
+    options.release = 11
 }
 
 /*应用自定义的扩展信息文件 */

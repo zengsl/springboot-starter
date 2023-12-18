@@ -26,7 +26,7 @@ dependencyResolutionManagement {
             version("hutoolVersion", "5.8.22")
             version("mybatisPlusVersion", "3.5.4")
             version("mapStructVersion", "1.5.5.Final")
-            version("thymeleafExtraVersion", "3.0.4.RELEASE")
+            //version("thymeleafExtraVersion", "3.0.4.RELEASE")
             library("guava", "com.google.guava:guava:32.1.3-jre")
             library("mybatis-plus-boot-starter", "com.baomidou","mybatis-plus-boot-starter").versionRef("mybatisPlusVersion")
             library("mybatis-plus", "com.baomidou","mybatis-plus").versionRef("mybatisPlusVersion")
@@ -34,6 +34,8 @@ dependencyResolutionManagement {
             library("hutool-bom", "cn.hutool","hutool-bom").versionRef("hutoolVersion")
             library("mapStruct", "org.mapstruct","mapstruct").versionRef("mapStructVersion")
             library("mapStructProcessor", "org.mapstruct","mapstruct-processor").versionRef("mapStructVersion")
+            //library("thymeleafExtraJavaTime", "org.thymeleaf.extras","thymeleaf-extras-java8time").versionRef("thymeleafExtraVersion")
+
         }
     }
 }
@@ -43,3 +45,5 @@ rootProject.name = "my-boot-template"
 include("template-common")
 include("template-pojo")
 include("template-web")
+include("template-service")
+include("template-mapper")

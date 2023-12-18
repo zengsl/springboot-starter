@@ -19,20 +19,20 @@ java {
 }
 
 /*应用自定义的扩展信息文件 */
-// 这里也规避了https://github.com/gradle/gradle/issues/18237 提到的Bug，在allprojects、subprojects上方引入扩展信息
-apply("version.gradle")
-
+//apply("version.gradle")
 
 subprojects {
-
+    apply(plugin = "java")
     apply(plugin = "java-library")
     apply(plugin = "io.spring.dependency-management")
     apply(plugin = "org.springframework.boot")
 
     dependencies {
 /*        implementation(platform("org.springframework.boot:spring-boot-dependencies:2.7.18"))*/
-        implementation(platform(libs.hutool.bom))
-        implementation(libs.guava)
+
+        // 从groovy中转为kotlin，在groovy中可以直接使用libs 在kotlin中要使用rootProject.libs 参考： https://docs.gradle.org/current/userguide/kotlin_dsl.html#sec:interoperability
+        implementation(platform(rootProject.libs.hutool.bom))
+        implementation(rootProject.libs.guava)
         compileOnly("org.projectlombok:lombok")
         testCompileOnly("org.projectlombok:lombok")
         annotationProcessor("org.projectlombok:lombok")

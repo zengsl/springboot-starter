@@ -1,4 +1,4 @@
-package com.ddp.res.web.controller;
+package com.ddp.res.web.test;
 
 import com.ddp.res.web.common.R;
 import org.springframework.web.bind.annotation.GetMapping;

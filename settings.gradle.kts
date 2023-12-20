@@ -44,6 +44,7 @@ dependencyResolutionManagement {
             library("jackson-datatype-jsr310", "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.15.3")
             library("jackson-datatype-jdk8", "com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.15.3")
             library("jsoup", "org.jsoup:jsoup:1.16.1")
+            library("jjwt", "io.jsonwebtoken:jjwt:0.9.1")
         }
     }
 }

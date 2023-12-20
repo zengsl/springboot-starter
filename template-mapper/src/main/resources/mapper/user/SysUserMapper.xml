@@ -4,7 +4,7 @@
   <resultMap id="BaseResultMap" type="com.ddp.res.pojo.user.SysUser">
     <!--@mbg.generated-->
     <!--@Table sys_user-->
-    <id column="ID" jdbcType="INTEGER" property="id" />
+    <id column="USER_ID" jdbcType="INTEGER" property="userId" />
     <result column="NAME" jdbcType="VARCHAR" property="name" />
     <result column="NICK_NAME" jdbcType="VARCHAR" property="nickName" />
     <result column="USER_TYPE" jdbcType="VARCHAR" property="userType" />

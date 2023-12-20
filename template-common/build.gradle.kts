@@ -8,5 +8,7 @@ dependencies {
     implementation(libs.commons.lang3)
     implementation(libs.commons.math3)
     implementation(libs.jsoup)
-    implementation("cn.hutool:hutool-core")
+    implementation("cn.hutool:hutool-crypto")
+    api(libs.jjwt)
+    api("cn.hutool:hutool-core")
 }

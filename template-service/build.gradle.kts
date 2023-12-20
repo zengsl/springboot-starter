@@ -1,4 +1,10 @@
 dependencies{
     api(project(":template-mapper"))
     implementation(libs.mybatis.plus.boot.starter)
+    implementation("org.springframework.boot:spring-boot-starter-data-redis")
+    implementation(libs.jackson.databind)
+    implementation(libs.jackson.modules.java8)
+    implementation(libs.jackson.module.parameter)
+    implementation(libs.jackson.datatype.jsr310)
+    implementation(libs.jackson.datatype.jdk8)
 }

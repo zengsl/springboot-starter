@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
 import com.ddp.res.pojo.user.SysUser;
 import com.ddp.res.service.user.SysUserService;
-import com.ddp.res.user.SysUserMapper;
+import com.ddp.res.mapper.user.SysUserMapper;
 import org.springframework.stereotype.Service;
 
 /**

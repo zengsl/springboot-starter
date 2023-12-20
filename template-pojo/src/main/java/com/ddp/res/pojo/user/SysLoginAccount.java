@@ -21,7 +21,7 @@ public class SysLoginAccount extends BaseEntity implements Serializable {
     */
     // @Schema(description="主键")
     @NotNull(message = "主键不能为null")
-    private Integer id;
+    private Long id;
 
     /**
     * 用户账号

@@ -9,4 +9,5 @@ import com.ddp.res.pojo.user.SysLoginAccount;
 */
 public interface SysLoginAccountService  {
 
+    SysLoginAccount getSysLoginAccount(String accountName);
 }

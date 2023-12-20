@@ -18,7 +18,7 @@ create table sys_account
     UPDATE_BY       varchar(64)  default ''  null comment '更新者',
     UPDATE_TIME     timestamp                null comment '更新时间',
     INTRO           varchar(500)             null comment '描述',
-    constraint ID_7947145934649168
+    constraint ID_SYS_ACCOUNT
         unique (ID)
 );
 
@@ -70,6 +70,8 @@ create table sys_user
     constraint IDX_SYS_USER_ID
         unique (ID),
     constraint unique_phone
-        unique (PHONE)
+        unique (PHONE),
+    constraint unique_email
+        unique (EMAIL)
 )
     comment '人员表' row_format = DYNAMIC;

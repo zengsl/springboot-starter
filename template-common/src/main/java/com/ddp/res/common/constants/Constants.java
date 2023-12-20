@@ -1,4 +1,4 @@
-package com.ddp.res.web.common;
+package com.ddp.res.common.constants;
 
 /**
  * 通用常量信息
